@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Matt Bentley <mbentley@mbentley.net>
+MAINTAINER Michael Biebl <mbiebl@gmail.com>
 
 # install runtime dependencies
 RUN apt-get update &&\

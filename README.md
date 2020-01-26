@@ -1,4 +1,4 @@
-mbentley/omada-controller
+mbiebl/omada-controller
 =========================
 
 docker image based off of ubuntu:18.04 for [TP-Link Omada Controller](https://www.tp-link.com/en/products/details/EAP-Controller.html) to control [TP-Link Omada EAP Series Wireless Access Points](https://www.tp-link.com/en/omada/)
@@ -17,5 +17,5 @@ docker run -d \
   -v omada-data:/opt/tplink/EAPController/data \
   -v omada-work:/opt/tplink/EAPController/work \
   -v omada-logs:/opt/tplink/EAPController/logs \
-  mbentley/omada-controller
+  mbiebl/omada-controller
 ```
