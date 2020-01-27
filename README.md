@@ -11,10 +11,12 @@ To run this Docker image and keep persistent data in named volumes:
 ```
 docker run -d \
   --name omada-controller \
-  -e TZ=Europe/Berlin \
   --restart unless-stopped \
+  -e TZ=Europe/Berlin \
   -p 8088:8088 \
   -p 8043:8043 \
+  -p 27001:27001/udp \
+  -p 27002:27002 \
   -p 29810:29180/udp \
   -p 29811:29811 \
   -p 29812:29812 \
