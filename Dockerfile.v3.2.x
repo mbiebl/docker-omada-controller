@@ -1,9 +1,11 @@
 FROM ubuntu:18.04
 MAINTAINER Michael Biebl <mbiebl@gmail.com>
 
+ARG DEBIAN_FRONTEND="noninteractive"
+
 # install runtime dependencies
 RUN apt-get update &&\
-  apt-get install -y libcap-dev net-tools wget &&\
+  apt-get install -y tzdata net-tools wget &&\
   rm -rf /var/lib/apt/lists/*
 
 # install omada controller (instructions taken from install.sh); then create a user & group and set the appropriate file system permissions
